@@ -35,9 +35,11 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"
+          ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -99,12 +101,19 @@
               "src/assets"
             ],
             "styles": [
+             "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+
+            "scripts": [
+            ]
+
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "0f57efa7-3273-49a8-9e1a-9e7391a563ac"
   }
 }

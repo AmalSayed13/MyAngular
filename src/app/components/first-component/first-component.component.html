@@ -1,0 +1,10 @@
+<div  class="firstC">
+  <div>
+    <input placeholder="pleaze enter your name" [(ngModel)]="userInput" (input)="updateParagraph()" />
+    <p>Hi,{{ userInput }}</p>
+    <button (click)="resetInput()" class="btn btn-primary">Reset</button>
+  </div>
+
+</div>
+
+

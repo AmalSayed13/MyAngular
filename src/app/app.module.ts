@@ -3,18 +3,27 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { FirstComponentComponent } from './components/first-component/first-component.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SliderComponent,
+    FirstComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [
-    provideClientHydration()
+  providers: [    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
